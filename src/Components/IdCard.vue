@@ -15,8 +15,8 @@ defineProps({
 
 <template>
 
-    <div class="card-container">
-        <h1>ID Card</h1>
+    <div class="card-container" style=" border: 1px solid black;">
+       
         <div class="id-card for male and female">
         </div>
         <img :src="picture" alt=" "/>
@@ -29,29 +29,40 @@ defineProps({
             <p><strong>Birth</strong> {{ birth }}</p>
         </div>
     </div>
+
+        
 </template>
 
 <style scoped>
 div.card-container {
-    border: 4px solid #100101;
-    padding: 2rem;
-    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid #100101;
+    padding: 1rem;
+    border-radius: 2px;
     background-color: #f9f9f9;
+    margin: 1rem;
+
 }
 
 img {
     width: 120px;
-    height: auto;
-    border-radius: 8px;
+    height: 120px;
+    border-radius: 4px;
     margin-top: 1rem;
+    align-items: left;
+    margin-right: 2rem;
+    
 }
 
 
 p {
     margin: 1rem 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #060404;
     text-align: left;
+    flex: 1;
 
 }
+
 </style>

@@ -6,9 +6,8 @@ import IdCard from './Components/IdCard.vue';
 import BoxColor from './Components/BoxColor.vue';
 import Random from './Components/Random.vue';
 import LikeButton from './Components/LikeButton.vue'; 
-import CreditCard from './Components/CreditCard.vue';
-import visa from './assets/images/visa.png';
-import masterCard from './assets/images/master-card.svg';
+
+
 
 </script>
 
@@ -36,7 +35,7 @@ import masterCard from './assets/images/master-card.svg';
 
     <h2>Box Colors</h2>
     <BoxColor :r="255" :g="0" :b="0" />
-    <BoxColor :r="128" :g="255" :b="0" /> 
+    <BoxColor :r="128" :g="255" :b="0" />
 
 
     <h2>Random Numbers</h2>
